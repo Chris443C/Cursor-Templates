@@ -48,7 +48,6 @@ Pre-defined prompts that automate or streamline common workflows:
 
 ## Getting Started
 
-```bash
 git clone https://github.com/your-username/cursor-templates.git
 cd cursor-templates
 Browse the folders to see the specialist configurations and commands.

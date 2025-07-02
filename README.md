@@ -48,5 +48,7 @@ cd cursor-templates
 Once cloned, you can explore the various specialist configurations and commands available in their respective files.
 Contributing
 We welcome contributions to expand and improve these templates. Please feel free to submit pull requests with new specialist roles, commands, or improvements to existing configurations.
-License
+
+## License
+
 This project is open source and available under the MIT License.

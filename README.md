@@ -1,4 +1,4 @@
-markdown# Cursor Templates Repository
+# Cursor Templates Repository
 
 This repository serves as a collection of specialized "user rules" and "commands" designed to enhance the capabilities of AI assistants, particularly for development and operations tasks.
 

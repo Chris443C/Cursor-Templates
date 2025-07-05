@@ -1,102 +1,24 @@
 {
-  "// Option 1: .vscode/settings.json (Cursor inherits VSCode settings)": {
-    "cursor.chat.defaultModel": "gpt-4",
-    "cursor.chat.maxTokens": 4000,
-    "cursor.copilot.enable": true,
-    "cursor.predict.enable": true,
-    "editor.fontSize": 14,
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true,
-    "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 1000,
-    "workbench.colorTheme": "Dark+",
-    "python.defaultInterpreterPath": "./venv/bin/python",
-    "eslint.workingDirectories": ["./frontend", "./backend"],
-    "typescript.preferences.importModuleSpecifier": "relative"
-  },
-
-  "// Option 2: .cursorrules file (Plain text, project-specific AI rules)": "// Create a .cursorrules file in your project root\n// This file contains natural language instructions for the AI\n// Example content:\n/*\nYou are working on a React TypeScript project.\nAlways use functional components with hooks.\nPrefer named exports over default exports.\nUse Tailwind CSS for styling.\nFollow the existing code patterns in the project.\nWrite comprehensive JSDoc comments for all functions.\n*/",
-
-  "// Option 3: .vscode/tasks.json (For custom commands/tasks)": {
-    "version": "2.0.0",
-    "tasks": [
-      {
-        "label": "Build Project",
-        "type": "shell",
-        "command": "npm run build",
-        "group": "build",
-        "presentation": {
-          "echo": true,
-          "reveal": "always",
-          "focus": false,
-          "panel": "shared"
-        }
-      },
-      {
-        "label": "Run Tests",
-        "type": "shell",
-        "command": "npm test",
-        "group": "test",
-        "presentation": {
-          "echo": true,
-          "reveal": "always",
-          "focus": false,
-          "panel": "shared"
-        }
-      },
-      {
-        "label": "Start Dev Server",
-        "type": "shell",
-        "command": "npm run dev",
-        "group": "build",
-        "isBackground": true,
-        "presentation": {
-          "echo": true,
-          "reveal": "always",
-          "focus": false,
-          "panel": "shared"
-        }
-      }
-    ]
-  },
-
-  "// Option 4: .vscode/launch.json (For debugging configurations)": {
-    "version": "0.2.0",
-    "configurations": [
-      {
-        "name": "Debug Node.js",
-        "type": "node",
-        "request": "launch",
-        "program": "${workspaceFolder}/src/index.js",
-        "env": {
-          "NODE_ENV": "development"
-        }
-      },
-      {
-        "name": "Debug React App",
-        "type": "node",
-        "request": "launch",
-        "program": "${workspaceFolder}/node_modules/.bin/react-scripts",
-        "args": ["start"],
-        "env": {
-          "BROWSER": "none"
-        }
-      }
-    ]
-  },
-
-  "// Option 5: package.json scripts (For command shortcuts)": {
-    "scripts": {
-      "dev": "next dev",
-      "build": "next build",
-      "start": "next start",
-      "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-      "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
-      "test": "jest",
-      "test:watch": "jest --watch",
-      "format": "prettier --write .",
-      "cursor:setup": "echo 'Setting up Cursor-specific configurations...'",
-      "cursor:rules": "echo 'Applying Cursor AI rules...'"
-    }
+  "cursor.chat.customCommands": {
+    "onboard": "Generate professionally formatted onboarding documentation with structured folder organization",
+    "review": "Perform comprehensive code review with security, performance, and best practices analysis",
+    "test": "Generate comprehensive test suite with unit, integration, and e2e tests",
+    "optimize": "Analyze and optimize code for performance, memory usage, and efficiency",
+    "debug": "Systematic debugging assistance with root cause analysis and solutions",
+    "deploy": "Generate deployment configurations and CI/CD pipeline setup",
+    "api": "Generate API documentation, OpenAPI specs, and client SDKs",
+    "refactor": "Intelligently refactor code for better maintainability and design patterns",
+    "security": "Comprehensive security audit and vulnerability assessment",
+    "readme": "Generate comprehensive README.md with badges, setup instructions, and examples",
+    "architect": "Design system architecture and generate technical specifications",
+    "migrate": "Generate migration strategies and scripts for technology transitions",
+    "schema": "Design and generate database schemas, migrations, and data models",
+    "config": "Generate configuration management and environment setup",
+    "monitor": "Generate monitoring, alerting, and observability configurations",
+    "prototype": "Rapidly generate functional prototypes and proof-of-concepts",
+    "fix": "Quick bug fixes and immediate problem resolution",
+    "generate": "Generate boilerplate code, templates, and scaffolding",
+    "pentest": "Comprehensive penetration testing and security assessment toolkit",
+    "docs": "Generate comprehensive project documentation suite"
   }
 }

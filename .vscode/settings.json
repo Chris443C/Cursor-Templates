@@ -20,5 +20,21 @@
     "generate": "Generate boilerplate code, templates, and scaffolding",
     "pentest": "Comprehensive penetration testing and security assessment toolkit",
     "docs": "Generate comprehensive project documentation suite"
+  },
+  {
+  "// Option 1: .vscode/settings.json (Cursor inherits VSCode settings)": {
+    "cursor.chat.defaultModel": "gpt-4",
+    "cursor.chat.maxTokens": 4000,
+    "cursor.copilot.enable": true,
+    "cursor.predict.enable": true,
+    "editor.fontSize": 14,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "workbench.colorTheme": "Dark+",
+    "python.defaultInterpreterPath": "./venv/bin/python",
+    "eslint.workingDirectories": ["./frontend", "./backend"],
+    "typescript.preferences.importModuleSpecifier": "relative"
   }
 }

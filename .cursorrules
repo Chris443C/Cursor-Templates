@@ -167,3 +167,6 @@ Generate comprehensive project documentation suite. Include:
 Output to: docs/ directory with full structure
 
 Always provide complete, production-ready output with proper formatting, examples, and comprehensive coverage of the requested functionality.
+
+ "// Option 2: .cursorrules file (Plain text, project-specific AI rules)": 
+// Create a .cursorrules file in your project root\n// This file contains natural language instructions for the AI\n// Example content:\n/*\nYou are working on a React TypeScript project.\nAlways use functional components with hooks.\nPrefer named exports over default exports.\nUse Tailwind CSS for styling.\nFollow the existing code patterns in the project.\nWrite comprehensive JSDoc comments for all functions.\n*/",

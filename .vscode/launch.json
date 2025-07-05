@@ -1,1 +1,24 @@
-
+"// Option 4: .vscode/launch.json (For debugging configurations)": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Debug Node.js",
+        "type": "node",
+        "request": "launch",
+        "program": "${workspaceFolder}/src/index.js",
+        "env": {
+          "NODE_ENV": "development"
+        }
+      },
+      {
+        "name": "Debug React App",
+        "type": "node",
+        "request": "launch",
+        "program": "${workspaceFolder}/node_modules/.bin/react-scripts",
+        "args": ["start"],
+        "env": {
+          "BROWSER": "none"
+        }
+      }
+    ]
+  },

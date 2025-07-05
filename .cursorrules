@@ -1,1 +1,169 @@
+Cursor Custom Commands Implementation
+Since Cursor doesn't have a native commands.json system, here are several methods to implement your custom commands:
+Method 1: .cursorrules File (Recommended)
+Create a .cursorrules file in your project root with command definitions:
+# Custom Development Commands for Cursor AI
 
+When I use a command starting with "/", interpret it as follows:
+
+## /onboard
+Generate professionally formatted onboarding documentation with structured folder organization. Create comprehensive onboarding materials including:
+- Complete directory structure with README.md, codebase analysis, tech stack details
+- Marp presentation with proper styling and navigation
+- Development setup guides and workflows
+- Team resources and learning paths
+Output to: onboarding/ directory
+
+## /review
+Perform comprehensive code review with security, performance, and best practices analysis. Include:
+- Security vulnerability assessment
+- Performance bottleneck identification
+- Code quality evaluation
+- Actionable recommendations with priority levels
+Output to: docs/development/code-review-report.md
+
+## /test
+Generate comprehensive test suite with unit, integration, and e2e tests. Include:
+- Test strategy and coverage analysis
+- Actual test code using project's testing framework
+- Test utilities and mock objects
+- Performance and accessibility tests
+Output to: docs/development/testing-guide.md or tests/ directory
+
+## /optimize
+Analyze and optimize code for performance, memory usage, and efficiency. Include:
+- Performance bottleneck identification
+- Memory optimization strategies
+- Scalability improvements
+- Before/after comparisons with metrics
+Output to: docs/technical/performance-optimization.md
+
+## /debug
+Systematic debugging assistance with root cause analysis and solutions. Include:
+- Problem analysis and debugging strategy
+- Step-by-step troubleshooting instructions
+- Multiple solution approaches
+- Prevention measures
+Output to: docs/development/troubleshooting.md
+
+## /deploy
+Generate deployment configurations and CI/CD pipeline setup. Include:
+- Environment analysis and containerization
+- CI/CD pipeline configuration
+- Infrastructure as code
+- Monitoring and rollback procedures
+Output to: docs/deployment/deployment-guide.md and deploy/ directory
+
+## /api
+Generate API documentation, OpenAPI specs, and client SDKs. Include:
+- Complete OpenAPI 3.0 specification
+- Interactive documentation with examples
+- Client SDK generation
+- Testing and validation tools
+Output to: docs/api/ and api/ directories
+
+## /refactor
+Intelligently refactor code for better maintainability and design patterns. Include:
+- Code analysis and design pattern application
+- Structural improvements
+- Step-by-step refactoring plan
+- Before/after comparisons
+Output to: docs/technical/refactoring-guide.md
+
+## /security
+Comprehensive security audit and vulnerability assessment. Include:
+- OWASP Top 10 vulnerability assessment
+- Access control and cryptography review
+- Infrastructure security analysis
+- Compliance and remediation plan
+Output to: docs/technical/security-audit-report.md
+
+## /readme
+Generate comprehensive README.md with badges, setup instructions, and examples. Include:
+- Project overview with compelling description
+- Installation and usage examples
+- API reference and development guide
+- Contributing guidelines and resources
+Output to: README.md
+
+## /architect
+Design system architecture and generate technical specifications. Include:
+- Requirements analysis and architecture design
+- Technology stack recommendations
+- Technical specifications and implementation roadmap
+- Architecture decision records
+Output to: docs/architecture/ directory
+
+## /migrate
+Generate migration strategies and scripts for technology transitions. Include:
+- Migration assessment and strategy
+- Data and code transformation scripts
+- Infrastructure migration planning
+- Validation and testing procedures
+Output to: docs/technical/migration-guide.md
+
+## /schema
+Design and generate database schemas, migrations, and data models. Include:
+- Data modeling and ERD creation
+- SQL DDL scripts and migrations
+- Performance optimization and API integration
+- Comprehensive documentation
+Output to: docs/technical/database-schema.md and database/ directory
+
+## /config
+Generate configuration management and environment setup. Include:
+- Environment-specific configurations
+- Infrastructure and application settings
+- Security and deployment automation
+- Configuration management solutions
+Output to: docs/deployment/configuration-guide.md and config/ directory
+
+## /monitor
+Generate monitoring, alerting, and observability configurations. Include:
+- Metrics, logging, and tracing architecture
+- Alerting and incident response procedures
+- Performance and security monitoring
+- Comprehensive dashboards and runbooks
+Output to: docs/monitoring/monitoring-guide.md and monitoring/ directory
+
+## /prototype
+Rapidly generate functional prototypes and proof-of-concepts. Include:
+- MVP implementations with essential features
+- User experience design and technical implementation
+- Validation testing and documentation
+- Production development roadmap
+Output to: prototypes/ and docs/development/prototyping-guide.md
+
+## /fix
+Quick bug fixes and immediate problem resolution. Include:
+- Rapid diagnosis and immediate fixes
+- Verification steps and quick workarounds
+- Prevention measures and clear communication
+- Fast, reliable solutions with minimal risk
+Output to: docs/development/issue-fixes.md
+
+## /generate
+Generate boilerplate code, templates, and scaffolding. Include:
+- Complete project structure and framework boilerplate
+- Code templates and development tooling
+- Database and API scaffolding
+- Production-ready code following best practices
+Output to: src/ or app/ directory and docs/development/code-generation-guide.md
+
+## /pentest
+Comprehensive penetration testing and security assessment toolkit. Include:
+- Reconnaissance and authentication testing
+- Input validation and web application security
+- API and business logic testing
+- Infrastructure and compliance testing
+Output to: docs/security/penetration-test-report.md and security/ directory
+
+## /docs
+Generate comprehensive project documentation suite. Include:
+- Complete documentation structure with organized directories
+- API, architecture, deployment, and development documentation
+- Monitoring, production, and training guides
+- User guides and project management documentation
+Output to: docs/ directory with full structure
+
+Always provide complete, production-ready output with proper formatting, examples, and comprehensive coverage of the requested functionality.

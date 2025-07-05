@@ -1,1 +1,60 @@
-
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Generate Onboarding",
+      "type": "shell",
+      "command": "echo",
+      "args": ["Generating onboarding documentation..."],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      }
+    },
+    {
+      "label": "Code Review",
+      "type": "shell",
+      "command": "echo",
+      "args": ["Performing code review..."],
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Generate Tests",
+      "type": "shell",
+      "command": "echo",
+      "args": ["Generating test suite..."],
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Security Audit",
+      "type": "shell",
+      "command": "echo",
+      "args": ["Running security audit..."],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      }
+    }
+  ]
+}

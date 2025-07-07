@@ -54,9 +54,11 @@ Pre-defined prompts that automate or streamline common workflows:
 
 ## How to Use
 
-1. **Clone** or download this repository.  
-2. **Integrate** the `commands.json` file and the specialist `.txt` files into your AI assistant’s configuration (see its docs).  
-3. **Explore** each file to learn the capabilities and prompts for every role and command.  
+1.  **Clone** or download this repository.
+2.  **Integrate** the `commands.json` file and the specialist `.txt` files into your AI assistant’s configuration.
+    * **For Cursor on Windows:** The `commands.json` file needs to be saved in the Cursor application directory, typically located at `%AppData%/Roaming/Cursor/`.
+    * (Refer to your AI assistant's official documentation for exact integration steps on other operating systems or different AI tools).
+3.  **Explore** each file to learn the capabilities and prompts for every role and command.
 
 ---
 
